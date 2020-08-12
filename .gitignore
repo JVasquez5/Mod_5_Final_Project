@@ -127,3 +127,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Sandbox
+sandbox.ipynb
+sandbox_2.ipynb
+
+#Other files
+pcba/
+smiles_images/
+tox21/
+tox21_complete/
+database.xml
+structure.csv
+structures.sdf
