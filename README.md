@@ -43,7 +43,7 @@ Thankfully, this dataset was fairly clean however upon downloading the dataset i
 
 ### Data Engineering
 
-Luckily, utilizing the rdkit library I was able to add Hydrogen atoms, as Hydrogens in SMILES are usualy ignored, to the MOL column that construct a molecule from a SMILES string. Furthermore, I was able to extract the following for each chemical compound from solely the SMILES string: topological polar surface area, molecular weight, number of valence electrons (electrons in the outer shell), number of atoms in the ring of a cyclic compound other than a carbon atom, general number of all atoms, number of all atoms with molecular weight > 1, number of aromatic (benzene) rings, and number aliphatic (non-benzene) rings. Lastly, I was able to extract the number of the following typical organic atoms: Carbon, Oxygen, Nitrogen, Phosphorus, and Sulfur.
+Luckily, utilizing the rdkit library I was able to add Hydrogen atoms, as Hydrogens in SMILES are usualy ignored, to the MOL column that construct a molecule from a SMILES string. Furthermore, I was able to extract the following for each chemical compound from solely the SMILES string: topological polar surface area, molecular weight, number of valence electrons (electrons in the outer shell), number of atoms in the ring of a cyclic compound other than a carbon atom, general number of all atoms, number of all atoms with molecular weight > 1, number of aromatic (benzene) rings, and number aliphatic (non-benzene) rings. Lastly, I was able to extract the number of the following typical elements in biomolecules: Carbon, Oxygen, Nitrogen, Phosphorus, and Sulfur.
 
 <p align='center'>
 <img src='images/chnops.png'>
@@ -87,4 +87,5 @@ Saving lives from cancer is an important endeavor. Thus, creating a machine lear
 ### Link to Presentations
 
 MVP Presentation: https://docs.google.com/presentation/d/1AbrXtWrN-nkuV5avpU70hOIWP_fsRGAIQBvql61z1jY/edit?usp=sharing
+
 Science Fair Presentation: https://docs.google.com/presentation/d/1n4P-MFPmkkxdL5qQSHYRQGNTVF5bCOTByXQAbz6TAN4/edit?usp=sharing
