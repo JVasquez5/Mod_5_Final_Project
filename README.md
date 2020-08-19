@@ -63,16 +63,28 @@ https://www.datasciencecentral.com/profiles/blogs/handling-imbalanced-data-sets-
 
 The following models were created to predict and properly classify this binary problem of Toxic versus Not Toxic: Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, XGBoost, ADABoost, and a Voting Classifier including all the aforementioned models. 
 
+Furthermore, a base Convolutional Neural Network (CNN), VGG16 architecture, and Xception architecture were used to predict and properly classify this binary problem of Toxic versus Not Toxic. 
+
+The best of all aforementioned models was the VGG16 model that produced the following: Accuracy: 0.7815 (78.15%),  Precision: 0.8342 (83.42%), Recall: 0.7000 (70%), F1: 0.7612 (76.12%)
+
+<p align='center'>
+<img src='images/vgg16.png'>
+</p>
+
+https://towardsdatascience.com/illustrated-10-cnn-architectures-95d78ace614d
+
 ### Conclusion
 
-Saving lives from prostate cancer is an important endeavor. Thus, providing a tool that can accurately detect chemical compound toxicity, for specific biological targets, is crucial in the assessment of currenly known compounds but also for future compounds that have yet been created.
-
-*More to come...*
+Saving lives from cancer is an important endeavor. Thus, creating a machine learning model that can accurately detect molecular toxicity, against specific biological targets, is crucial in the assessment of currently known compounds but also for future compounds that have yet been created.
 
 ### Future Work
 
 * Partner with pharmaceutical and biotechnology organizations, clinical research organizations, and academic/research professionals that gather more information regarding toxicity of other chemical compounds on the Androgen Receptor.
 * Expand models to predict toxicity of chemical compounds on other biological targets, not just the Androgen Receptor.
 * Utilize GPU's/Cloud computing to analyze results quicker and more efficiently.
+* Build a GAN that can generate molecules that are not toxic to specified biological receptors to reverse engineer and streamline the drug discovery process.
 
-*More to come...*
+### Link to Presentations
+
+MVP Presentation: https://docs.google.com/presentation/d/1AbrXtWrN-nkuV5avpU70hOIWP_fsRGAIQBvql61z1jY/edit?usp=sharing
+Science Fair Presentation: https://docs.google.com/presentation/d/1n4P-MFPmkkxdL5qQSHYRQGNTVF5bCOTByXQAbz6TAN4/edit?usp=sharing
