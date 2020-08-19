@@ -140,3 +140,5 @@ tox21_complete/
 database.xml
 structure.csv
 structures.sdf
+face_detector.h15/
+mol_images/
