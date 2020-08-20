@@ -19,7 +19,7 @@ Note that the label matrix contains many missing values (NaNs). The original dat
 
 ### Business Case
 
-"Prostate cancer is the most common cancer and the second leading cause of cancer death among men in the United States. Prostate cancer usually grows very slowly, and finding and treating it before symptoms occur may not improve men's health or help them live longer." - (https://www.cancer.gov/types/prostate). 
+"Prostate cancer is the common cancer and the second leading cause of cancer death among men in the United States. Prostate cancer usually grows very slowly, and finding and treating it before symptoms occur may not improve men's health or help them live longer." - (https://www.cancer.gov/types/prostate). 
 
 Cancer starts when cells in the body begin to grow out of control. Cells in nearly any part of the body can become cancer cells, and can then spread to other areas of the body. Prostate cancer begins when cells in the prostate gland start to grow out of control. The prostate is a gland found only in males. It makes some of the fluid that is part of semen.
 
@@ -29,9 +29,7 @@ The prostate is below the bladder (the hollow organ where urine is stored) and i
 <img src='images/prostate_cancer.png'>
 </p>
 
-With that context given, my goal with this project is two fold. First and foremost, to partner with pharmaceutical/biotechnology companies to aid in their ability to predict whether or not chemical compounds are toxic or not to the Androgen Receptor. Secondly, to generate a repository of de novo molecules that can potentially serve as therapeutics to those afflicted with Prostate Cancer. 
-
-In order to achieve such a goal I must first create a series of machine learning models that are capable of prediciting classifying whether or not chemical compounds are or not toxic to the Androgen Receptor from the aforementioned dataset, and eventually newly included chemical compounds as well. 
+With that context given, my goal with this project is to create a series of machine learning models that are capable of prediciting/classifying whether or not molecules are toxic or not toxic to the Androgen Receptor from the aforementioned dataset and eventually unseen molecules as well. 
 
 ### Data Cleaning
 
@@ -41,9 +39,11 @@ Thankfully, this dataset was fairly clean however upon downloading the dataset i
 <img src='images/class_imbalance_ar.png'>
 </p>
 
+Furthermore, to prepare for the Convolutional Neural Network(CNN) models all images were converted from PNG to JPG to remove the transparency layer and make the images viable as input for the CNN. Moreover, the train, test, and validation sets were built by hand sorting toxic and not toxic into individual folders. Also, the images were reproduced several times in order to create the training data resulting in a final total of 5635 toxic molecules and 5564 not toxic moelucules.
+
 ### Data Engineering
 
-Luckily, utilizing the rdkit library I was able to add Hydrogen atoms, as Hydrogens in SMILES are usualy ignored, to the MOL column that construct a molecule from a SMILES string. Furthermore, I was able to extract the following for each chemical compound from solely the SMILES string: topological polar surface area, molecular weight, number of valence electrons (electrons in the outer shell), number of atoms in the ring of a cyclic compound other than a carbon atom, general number of all atoms, number of all atoms with molecular weight > 1, number of aromatic (benzene) rings, and number aliphatic (non-benzene) rings. Lastly, I was able to extract the number of the following typical elements in biomolecules: Carbon, Oxygen, Nitrogen, Phosphorus, and Sulfur.
+Luckily, utilizing the rdkit library I was able to add Hydrogen atoms, as Hydrogens in SMILES are usualy ignored, to the MOL column that construct a molecule from a SMILES string. Furthermore, I was able to extract the following for each chemical compound from solely the SMILES string: topological polar surface area, molecular weight, number of valence electrons (electrons in the outer shell), number of atoms in the ring of a cyclic compound other than a carbon atom, general number of all atoms, number of all atoms with molecular weight > 1, number of aromatic (benzene) rings, number aliphatic (non-benzene) rings, and 2D images. Lastly, I was able to extract the number of the following typical elements in biomolecules: Carbon, Oxygen, Nitrogen, Phosphorus, and Sulfur.
 
 <p align='center'>
 <img src='images/chnops.png'>
