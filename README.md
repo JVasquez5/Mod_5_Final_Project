@@ -88,3 +88,17 @@ Saving lives from cancer is an important endeavor. Thus, creating a machine lear
 MVP Presentation: https://docs.google.com/presentation/d/1AbrXtWrN-nkuV5avpU70hOIWP_fsRGAIQBvql61z1jY/edit?usp=sharing
 
 Science Fair Presentation: https://docs.google.com/presentation/d/1n4P-MFPmkkxdL5qQSHYRQGNTVF5bCOTByXQAbz6TAN4/edit?usp=sharing
+
+### Sources
+
+https://tripod.nih.gov/tox21/challenge/
+
+(https://www.cancer.gov/types/prostate)
+
+https://www.cheminformania.com/learn-how-to-teach-your-computer-to-see-chemistry-free-chemception-models-with-rdkit-and-keras/#comments
+
+https://depth-first.com/articles/2019/02/04/chemception-deep-learning-from-2d-chemical-structure-images/
+
+http://moleculenet.ai/datasets-1
+
+
